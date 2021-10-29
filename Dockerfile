@@ -24,8 +24,8 @@ EXPOSE 2222
 #script to execute the systemctl commands without enabling systemd
 # used to avoid mounting the required cgroup volume at startup
 # https://github.com/gdraheim/docker-systemctl-replacement
-COPY systemctl.py /usr/bin/systemctl
-RUN chmod a+x /usr/bin/systemctl
+# COPY systemctl.py /usr/bin/systemctl
+# RUN chmod a+x /usr/bin/systemctl
 
 #copy and build the node application/expose port
 WORKDIR /usr/local/app
