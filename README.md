@@ -13,8 +13,8 @@ RUN chmod a+x /usr/bin/systemctl
 ```
 ## Method 2 - Running SSHD as a non-daemon process - startup2.sh
 - If there is no need to manage any services/daemons then we can pass the -D flag while starting [sshd](https://man.openbsd.org/sshd) & appending our application startup command.
-- [sshd](https://man.openbsd.org/sshd) will not detech & will not become a daemon 
-- 📝  See method2 branch
+- [sshd](https://man.openbsd.org/sshd) will not detech & will not become a daemon process
+- 📝  See method2 branch (git clone -b method2 https://github.com/Kendubu1/nodejs-centos7-container-systemd.git)
 ```bash
 #startup.sh snippet
 echo "Starting SSH & Node..."
